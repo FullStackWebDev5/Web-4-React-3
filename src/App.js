@@ -1,36 +1,39 @@
 import './App.css';
-// import Student from './components/Student'
+import Student from './components/Student'
 // import Counter from './components/Counter'
 // import EventHandling from './components/EventHandling'
-import SocialMediaExample from './components/SocialMediaExample'
+// import SocialMediaExample from './components/SocialMediaExample'
 
 function App() {
-	// let rishavDetails = {
-	// 	name: 'Rishav Sagar',
-	// 	batchNo: 5,
-	// 	course: 'MERN Stack',
-	// 	country: 'India'
-	// }
-	// let chandanDetails = {
-	// 	name: 'Chandan Pandey',
-	// 	batchNo: 7,
-	// 	course: 'MEVN Stack',
-	// 	country: 'USA'
-	// }
-	// let mayankDetails = {
-	// 	name: 'Mayank',
-	// 	batchNo: 3,
-	// 	course: 'MEAN Stack',
-	// 	country: 'UAE'
-	// }
+	let rishavDetails = {
+		name: 'Rishav Sagar',
+		batchNo: 5,
+		course: 'MERN Stack',
+		country: 'India',
+		likesIcecream: true
+	}
+	let chandanDetails = {
+		name: 'Chandan Pandey',
+		batchNo: 7,
+		course: 'MEVN Stack',
+		country: 'USA',
+		likesIcecream: false
+	}
+	let mayankDetails = {
+		name: 'Mayank',
+		batchNo: 3,
+		course: 'MEAN Stack',
+		country: 'UAE',
+		likesIcecream: true
+	}
   return (
     <div className="App">
 			{/* <Counter /> */}
-			{/* <Student details={rishavDetails} rollNo={5} likesIceCream={true} />
-			<Student details={chandanDetails} rollNo={10} likesIceCream={false} />
-			<Student details={mayankDetails} rollNo={15} likesIceCream={true} /> */}
+			<Student details={rishavDetails} />
+			<Student details={chandanDetails} />
+			<Student details={mayankDetails} />
 			{/* <EventHandling /> */}
-			<SocialMediaExample />
+			{/* <SocialMediaExample /> */}
     </div>
   );
 }
